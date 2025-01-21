@@ -1,0 +1,104 @@
+/* სხეულის სტილი */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* გრადიენტული ფონი */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* მოძრაობის შეზღუდვა */
+    position: relative;
+    cursor: url('https://www.example.com/your-custom-cursor.png'), auto; /* კურსორის შეცვლა */
+    transition: background 0.4s ease-in-out; /* ფონზე ანიმაცია */
+}
+
+/* კონტეინერის სტილი */
+.container {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s ease;
+    position: relative;
+    z-index: 10;
+}
+
+/* სათაურის სტილი */
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* ინპუტის სტილი */
+input {
+    width: 80%;
+    padding: 15px;
+    margin: 20px 0;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #555;
+    outline: none;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+input:focus {
+    border-color: #2575fc; /* ფოკუსის დროს ინპუტის ხაზის ფერი */
+    transform: scale(1.05); /* ფოკუსის დროს ლამაზი ზუმი */
+}
+
+/* ღილაკის სტილი */
+button {
+    width: 80%;
+    padding: 15px;
+    background-color: #2575fc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #6a11cb; /* ღილაკის ეფექტი */
+    transform: scale(1.1); /* ღილაკის ეფექტი */
+}
+
+/* შედეგის სტილი */
+#output {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+/* კურსორის მიმდევრობის ეფექტი */
+.background-element {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    background: rgba(255, 255, 255, 0.1);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: transform 0.3s ease-in-out, width 0.3s ease, height 0.3s ease;
+    z-index: -1;
+}
+
+/* ბექგრაუნდის დროს კურსორის მოძრაობის ეფექტი */
+body:hover .background-element {
+    transform: translate(-50%, -50%) scale(1);
+}
