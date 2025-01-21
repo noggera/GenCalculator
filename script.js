@@ -11,9 +11,9 @@ function determineGeneration() {
     let output = document.getElementById('output');
 
     if (birthYear < 1925) {
-        output.innerText = 'თქვენ სავარაუდოდ გარდაცვლილი ბრძანდებით.';
+        output.innerText = 'ვწუხვარ, მაგრამ თქვენ სავარაუდოდ გარდაცვლილი ბრძანდებით.';
     } else if (birthYear > 2025) {
-        output.innerText = 'თქვენ ჯერ არ დაბადებულხართ.';
+        output.innerText = 'ვვარაუდობ, რომ თქვენ ჯერ არ დაბადებულხართ.';
     } else if (birthYear === 2025) {
         output.innerText = 'შენ ხარ: Gen Beta';
     } else if (birthYear >= 2010 && birthYear <= 2024) {
